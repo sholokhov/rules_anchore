@@ -8,90 +8,90 @@ def anchore_deps():
     http_archive(
         name = "grype_linux_amd64",
         build_file_content = 'exports_files(["grype"], visibility = ["//visibility:public"])',
-        sha256 = "8310224d2ddac10fc344e5cb565586e71416e42f6e0461da37e9ff2c95a59e4a",
+        sha256 = "1de013f33a235d0c25f7dc496f7efd1621712ab4bc9f327652c62d1af4bdeb64",
         urls = [
-            "https://github.com/anchore/grype/releases/download/v0.28.0/grype_0.28.0_linux_amd64.tar.gz",
+            "https://github.com/anchore/grype/releases/download/v0.48.0/grype_0.48.0_linux_amd64.tar.gz",
         ],
     )
 
     http_archive(
         name = "grype_linux_arm64",
         build_file_content = 'exports_files(["grype"], visibility = ["//visibility:public"])',
-        sha256 = "5f423868ec56dd6666ad64de03b324bbc3d5bacff7332c042a371201958d082d",
+        sha256 = "2ecae2883e99aa15929a7df8b480838fbc7409e29e94345375d86569afb58ade",
         urls = [
-            "https://github.com/anchore/grype/releases/download/v0.28.0/grype_0.28.0_linux_arm64.tar.gz",
+            "https://github.com/anchore/grype/releases/download/v0.48.0/grype_0.48.0_linux_arm64.tar.gz",
         ],
     )
 
     http_archive(
         name = "grype_darwin_amd64",
         build_file_content = 'exports_files(["grype"], visibility = ["//visibility:public"])',
-        sha256 = "beadfe60b199f3bb22d7618629093f7c14dcea9b957887c42fc225dcfe02dc66",
+        sha256 = "c8da0a4277979d93404d879c80d0ed751b301b5974dbdb0112cc577e19125f95",
         urls = [
-            "https://github.com/anchore/grype/releases/download/v0.28.0/grype_0.28.0_darwin_amd64.zip",
+            "https://github.com/anchore/grype/releases/download/v0.48.0/grype_0.48.0_darwin_amd64.tar.gz",
         ],
     )
 
     http_archive(
         name = "grype_darwin_arm64",
         build_file_content = 'exports_files(["grype"], visibility = ["//visibility:public"])',
-        sha256 = "de30ff4bff721bf5e3c7d509174e1745b03e1157f8e2c63f4b79848cdf9a4ecc",
+        sha256 = "cb1129a882ffe2471cd5406bc6004924cb5d8a172a8bd38037e673f0bcdca80a",
         urls = [
-            "https://github.com/anchore/grype/releases/download/v0.28.0/grype_0.28.0_darwin_arm64.zip",
+            "https://github.com/anchore/grype/releases/download/v0.48.0/grype_0.48.0_darwin_arm64.tar.gz",
         ],
     )
 
     http_archive(
         name = "grype_windows",
         build_file_content = 'exports_files(["grype.exe"], visibility = ["//visibility:public"])',
-        sha256 = "4e339eb138ca4269381856dded16d2599b005041a61b8076317f05631fba186b",
+        sha256 = "f643b5705f2d1f7c67df9163d8493acce22d743f5fae7a13817d8b74be67dba6",
         urls = [
-            "https://github.com/anchore/grype/releases/download/v0.28.0/grype_0.28.0_windows_amd64.zip",
+            "https://github.com/anchore/grype/releases/download/v0.48.0/grype_0.48.0_windows_amd64.zip",
         ],
     )
 
     http_archive(
         name = "syft_linux_amd64",
         build_file_content = 'exports_files(["syft"], visibility = ["//visibility:public"])',
-        sha256 = "0efee88a90e46f86be62f45cdeb416d2e0734dcfebc6f4fec6b41bcbbd2645fa",
+        sha256 = "00794a0eafe3e86cf10e096fffd8f983551fc8585937deb4fc44203635f0b2ca",
         urls = [
-            "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_linux_amd64.tar.gz",
+            "https://github.com/anchore/syft/releases/download/v0.54.0/syft_0.54.0_linux_amd64.tar.gz",
         ],
     )
 
     http_archive(
         name = "syft_linux_arm64",
         build_file_content = 'exports_files(["syft"], visibility = ["//visibility:public"])',
-        sha256 = "fc8e2cee22cc82a69a1919fa0b559f750fa7fca44bc8b576709bc5f2bcab481c",
+        sha256 = "60f6f2bedc716b10a1aa7791f9c7d67a11563dd13d11c370bccc28edc801d9be",
         urls = [
-            "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_linux_arm64.tar.gz",
+            "https://github.com/anchore/syft/releases/download/v0.54.0/syft_0.54.0_linux_arm64.tar.gz",
         ],
     )
 
     http_archive(
         name = "syft_darwin_amd64",
         build_file_content = 'exports_files(["syft"], visibility = ["//visibility:public"])',
-        sha256 = "052915bde04071ec5e60ad20181ff74f9c72d474a857164560a3c7b40dd4a832",
+        sha256 = "c400be25b706e2156623c62ce3044b5e0d4e4c535baddcbf361e02a17653e2b4",
         urls = [
-            "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_darwin_amd64.tar.gz",
+            "https://github.com/anchore/syft/releases/download/v0.54.0/syft_0.54.0_darwin_amd64.tar.gz",
         ],
     )
 
     http_archive(
         name = "syft_darwin_arm64",
         build_file_content = 'exports_files(["syft"], visibility = ["//visibility:public"])',
-        sha256 = "84dd287cebba6c0278a883dbb233c0ae38b0c9c1d272e01a4c7046bba46a9c07",
+        sha256 = "e308e8ac8aba47c3a9fbf70473437a0dcd713f8ed7b53bd3ca231019b3bc12ad",
         urls = [
-            "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_darwin_arm64.zip",
+            "https://github.com/anchore/syft/releases/download/v0.54.0/syft_0.54.0_darwin_arm64.zip",
         ],
     )
 
     http_archive(
         name = "syft_windows",
         build_file_content = 'exports_files(["syft"], visibility = ["//visibility:public"])',
-        sha256 = "ffbaffa938dbb8c3510c59ae0b96bda2d5f90c4ad7af9077d6480fac1ac6efaa",
+        sha256 = "b62445765fdd71dc52f3cc9077ad2c002666c29c0e4d9cef78a85b6e44516c5f",
         urls = [
-            "https://github.com/anchore/syft/releases/download/v0.34.0/syft_0.34.0_windows_amd64.zip",
+            "https://github.com/anchore/syft/releases/download/v0.54.0/syft_0.54.0_windows_amd64.zip",
         ],
     )
 
@@ -146,7 +146,7 @@ def anchore_deps():
     _maybe(
         http_archive,
         name = "com_google_protobuf",
-	sha256 = "25f1292d4ea6666f460a2a30038eef121e6c3937ae0f61d610611dfb14b0bd32",
+	    sha256 = "25f1292d4ea6666f460a2a30038eef121e6c3937ae0f61d610611dfb14b0bd32",
         strip_prefix = "protobuf-3.19.1",
         urls = ["https://github.com/protocolbuffers/protobuf/archive/refs/tags/v3.19.1.zip"],
     )
